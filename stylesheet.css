@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    border-top: 8px solid #6CC6C4;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: ".";
+    visibility: hidden;
+    display: block;
+    clear: both;
+    height: 0;
+}
+
+
+/* title bar */
+.site-container {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.site-title {
+    float: left;
+}
+
+.clinic-contact {
+    float: right;
+}
+
+.telephone-number {
+    font-weight: bold;
+    text-align: right;
+}
+
+.opening-hours {
+    border: 1px solid #aaa;
+}
+
+
+/* header nav */
+.header-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+}
+
+.header-nav li {
+    display: inline-block;
+    background-color: #96DFDD;
+    border: 1px solid #96FFDD;
+    font-size: medium;
+    width: 20%;
+}
+
+.header-nav a {
+    display: block;
+    padding: 25px 0;
+}
+
+.header-nav span {
+    display: block;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.en {
+    padding-top: 10px;
+}
+
+.header-nav li:first-child {
+    border-radius: 5px 0 0 5px;
+}
+
+.header-nav li:last-child {
+    border-radius: 0 5px 5px 0;
+}
