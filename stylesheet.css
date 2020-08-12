@@ -3,9 +3,15 @@
 }
 
 body {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color: #515151;;
     margin: 0;
     border-top: 8px solid #6CC6C4;
     background-color: #F6F6F6;
+}
+
+p {
+    margin: 0;
 }
 
 a {
@@ -22,28 +28,54 @@ a {
 }
 
 
-/* title bar */
 .site-container {
     max-width: 1080px;
     margin: 0 auto;
     padding: 0 50px;
 }
 
+
+/* header title bar */
+.titlebar {
+    margin: 0 0 12px;
+}
+
 .site-title {
     float: left;
+    margin: 32px 0 0;
+}
+
+.site-title a {
+    font-size: 0;
 }
 
 .clinic-contact {
     float: right;
 }
 
-.telephone-number {
-    font-weight: bold;
+.clinic-name {
+    font-size: x-small;
     text-align: right;
+    margin: 10px 0;
+}
+
+.telephone-number {
+    font-size: 1.57em;
+    text-align: right;
+    margin: 6px 0;
+    background: url("images/bgTel.png") no-repeat 5px center;
 }
 
 .opening-hours {
     border: 1px solid #aaa;
+    font-size: x-small;
+    margin: 0px 0;
+    padding: 7px 0px;
+    text-align: center;
+}
+
+.closed-day {
+    color: #b22c00;
 }
 
 
@@ -65,7 +97,7 @@ a {
 
 .header-nav a {
     display: block;
-    padding: 25px 0;
+    padding: 20px 0;
 }
 
 .header-nav span {
@@ -77,7 +109,7 @@ a {
 }
 
 .en {
-    padding-top: 10px;
+    padding-top: 6px;
 }
 
 .header-nav li:first-child {
@@ -129,7 +161,7 @@ a {
     border-bottom: 1px solid #96FFDD;
     border-right: 0;
     border-left: 0;
-    padding: 15px 24px;
+    padding: 14px 24px;
     margin: 0 10px;
     background-image: url("images/bgListIcon01.png");
     background-repeat: no-repeat;
@@ -142,7 +174,8 @@ a {
 }
 
 .contents-nav a {
-    font-size: 0.97em;
+    font-size: 0.9em;
+    font-weight: bold;
 }
 
 .contents-nav a:hover {
@@ -161,10 +194,12 @@ a {
 }
 
 .site-image {
-    display: none;
+    display: block;
+    width: 100%;
 }
 
 .updates {
+    margin-top: 12px;
     padding: 18px 19px 36px;
     background-color: white;
 }
@@ -177,7 +212,7 @@ a {
 }
 
 .updates section {
-    padding: 15px 15px;
+    padding: 15px 12px;
     border-bottom: 1px solid #ddd;
 }
 
@@ -188,19 +223,23 @@ a {
 .date {
     float: left;
     width: 20%;
+    font-size: 0.8em;
+    font-weight: bold;
 }
 
 .content {
     float: left;
     margin: 0;
     width: 80%;
+    font-size: 0.9em;
+    line-height: 1.4em;
 }
 
 
 /* footer */
 footer[class="site-container"] {
     margin-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 8px;
 }
 
 .footer-nav ul {
@@ -241,10 +280,61 @@ footer p {
 .contact {
     text-align: right;
     margin: 0;
-    padding: 18px;
+    padding: 16px 0;
+    font-size: 0.75em;
     border-bottom: 3px solid #96DFDD;
+}
+
+.adress, .tel {
+    letter-spacing: 0.06em;
 }
 
 .copyright {
     text-align: center;
+    margin: 11px 0;
+}
+
+
+
+/* Gradient Laplus color-code: #5FB3DF of #7FBBEA */
+
+.header-nav a, .contents-nav h2 {
+    background-color: #5FB3DF;
+    background-image: linear-gradient(#9890e3 0%, #b1f4cf 100%);
+    background-image: linear-gradient(#48c6ef 0%, #6f86d6 100%);
+    text-shadow: 1px 1px 2px #48c6ef;
+}
+
+.header-nav a:hover {
+    background-image: linear-gradient(#6f86d6 0%, #48c6ef 100%);
+}
+
+.header-nav li, .contents-nav h2, .contents-nav ul {
+    border: 1px solid #5FB3DF;
+}
+
+.header-nav li {
+    border-left: 0;
+    border-left: 1px solid #ddd;
+}
+
+.header-nav li:first-child {
+    border-left: 1px solid #5FB3DF;
+}
+
+.contents-nav li {
+    border-bottom: 1px solid #5FB3DF;
+}
+
+body {
+    border-top: 8px solid #5FB3DF;
+}
+
+.footer-nav ul {
+    background-color: #6CC6C4;
+    background-color: #48c6ef;
+    background-color: #5FB3DF;
+    /*
+    background-image: linear-gradient(#48c6ef 0%, #6f86d6 100%);
+    */
 }
