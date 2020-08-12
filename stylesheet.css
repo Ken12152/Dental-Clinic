@@ -5,6 +5,7 @@
 body {
     margin: 0;
     border-top: 8px solid #6CC6C4;
+    background-color: #F6F6F6;
 }
 
 a {
@@ -88,16 +89,20 @@ a {
 }
 
 
-/* Contents nav */
-.contents-nav {
-    width: 28%;
-}
 
-.contents-nav nav:first-child {
+/*----- Contents-wrapper -----*/
+.contents-wrapper {
     margin-top: 22px;
 }
 
-.contents-nav nav {
+
+/* Contents nav */
+.contents-nav {
+    float: left;
+    width: 28%;
+}
+
+.contents-nav nav+nav {
     margin-top: 26px;
 }
 
@@ -138,4 +143,46 @@ a {
 
 .contents-nav a {
     font-size: 0.97em;
+}
+
+/* main */
+.main-contents {
+    float: right;
+    width: 70%;
+}
+
+.site-image {
+    display: none;
+}
+
+.updates {
+    padding: 18px 19px 36px;
+    background-color: white;
+}
+
+.updates h2 {
+    border-bottom: 3px solid #96DFDD;
+    padding: 17px 0;
+    margin: 14px 0;
+    margin-top: 0;
+}
+
+.updates section {
+    padding: 15px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.updates h2+section {
+    padding-top: 13px;
+}
+
+.date {
+    float: left;
+    width: 20%;
+}
+
+.content {
+    float: left;
+    margin: 0;
+    width: 80%;
 }
