@@ -1,0 +1,139 @@
+@media screen and (max-width: 1080px) {
+    .content {
+        margin-top: 11px;
+    }
+
+    .content, .date {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 878px) {
+    .site-container {
+        padding: 0 24px;
+    }
+
+    .header-nav li {
+        border-radius: 5px;
+    }
+
+    .header-nav li:first-child, .header-nav li:last-child {
+        border-radius: 5px;
+    }
+
+    li[class="one"], li[class="three"] {
+        width: 33.3%;
+    }
+    
+    li[class="two"] {
+        width: 33.4%;
+    }
+
+    li[class="four"], li[class="five"] {
+        width: 50%;
+        border-top: 1px solid #ddd;
+    }
+
+    li[class="four"] {
+        border-left: 1px solid #5FB3DF;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .site-container {
+        padding: 0 18px;
+    }
+
+    .contents-nav, .main-contents {
+        width: 100%;
+    }
+
+    .contents-nav {
+        margin-top: 26px;
+    }
+}
+
+@media screen and (max-width: 666px) {
+    li[class="one"] {
+        width: 100%;
+    }
+
+    li[class="two"], li[class="three"], li[class="four"], li[class="five"] {
+        width: 50%;
+    }
+
+    li[class="two"] {
+        border-left: 1px solid #5FB3DF;
+    }
+
+    .header-nav li+li {
+        border-top: 1px solid #ddd !important;
+    }
+
+    .titlebar {
+        margin-bottom: 20px;
+    }
+    
+    .site-title, .clinic-contact {
+        float: none;
+        text-align: center;
+    }
+    
+    .clinic-name {
+        text-align: center;
+    }
+
+    .telephone-number {
+        display: inline-block;
+        margin-top: 0;
+        padding-left: 27px;
+        background-position: 0 center;
+    }
+
+    .opening-hours {
+        width: 218px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .contact strong, .contact span {
+        display: block;
+        text-align: center;
+    }
+
+    .contact {
+        padding-bottom: 10px;
+    }
+
+    .adress {
+        margin: 4px 0;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header-nav li {
+        width: 100% !important;
+        border: 1px solid #5FB3DF !important;
+    }
+
+    .header-nav li+li {
+        border-top: 1px solid #ddd !important;
+    }
+    
+    .header-nav li a {
+        padding: 16px 0;
+    }
+
+    .contents-wrapper {
+        margin-top: 28px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .site-container {
+        padding: 0 12px;
+    }
+}
